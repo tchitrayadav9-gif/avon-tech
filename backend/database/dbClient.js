@@ -43,20 +43,35 @@ class JsonRepository {
   findByIdSync(id) {
     if (!id) return null;
     const items = this.readData();
-    return items.find(item => item._id === id.toString() || item.id === id.toString()) || null;
+    const idStr = id._id ? id._id.toString() : id.toString();
+    return items.find(item => item._id === idStr || item.id === idStr) || null;
   }
 
-  async find(filter = {}) {
+  find(filter = {}) {
     let items = this.readData();
     // Filter matching
     items = items.filter(item => {
       for (let key in filter) {
+        if (filter[key] === undefined) continue;
+        
         // Handle search queries
         if (typeof filter[key] === 'object' && filter[key] !== null) {
           // If regex-like search
           if (filter[key].$regex) {
             const regex = new RegExp(filter[key].$regex, filter[key].$options || 'i');
             if (!regex.test(item[key] || '')) return false;
+            continue;
+          }
+          
+          // Handle $in operator
+          if (filter[key].$in) {
+            const inArray = filter[key].$in;
+            const itemVal = item[key];
+            if (Array.isArray(itemVal)) {
+              if (!itemVal.some(val => inArray.includes(val.toString()))) return false;
+            } else {
+              if (!inArray.includes(itemVal ? itemVal.toString() : '')) return false;
+            }
             continue;
           }
         }
@@ -73,14 +88,17 @@ class JsonRepository {
     return new JsonQuery(items, this);
   }
 
-  async findOne(filter = {}) {
-    const items = await this.find(filter);
-    return items.data[0] || null;
+  findOne(filter = {}) {
+    const query = this.find(filter);
+    const item = query.data[0] || null;
+    return new JsonQuery(item, this);
   }
 
-  async findById(id) {
+  findById(id) {
+    if (!id) return new JsonQuery(null, this);
     const items = this.readData();
-    const item = items.find(item => item._id === id.toString() || item.id === id.toString()) || null;
+    const idStr = id._id ? id._id.toString() : id.toString();
+    const item = items.find(item => item._id === idStr || item.id === idStr) || null;
     return new JsonQuery(item, this);
   }
 
@@ -97,10 +115,11 @@ class JsonRepository {
     return newItem;
   }
 
-  async findByIdAndUpdate(id, updateData, options = {}) {
+  findByIdAndUpdate(id, updateData, options = {}) {
     const items = this.readData();
-    const index = items.findIndex(item => item._id === id.toString() || item.id === id.toString());
-    if (index === -1) return null;
+    const idStr = id._id ? id._id.toString() : id.toString();
+    const index = items.findIndex(item => item._id === idStr || item.id === idStr);
+    if (index === -1) return new JsonQuery(null, this);
 
     // Handle $push (for array fields like comments or notes)
     if (updateData.$push) {
@@ -126,16 +145,17 @@ class JsonRepository {
     };
     
     this.writeData(items);
-    return items[index];
+    return new JsonQuery(items[index], this);
   }
 
-  async findByIdAndDelete(id) {
+  findByIdAndDelete(id) {
     const items = this.readData();
-    const index = items.findIndex(item => item._id === id.toString() || item.id === id.toString());
-    if (index === -1) return null;
+    const idStr = id._id ? id._id.toString() : id.toString();
+    const index = items.findIndex(item => item._id === idStr || item.id === idStr);
+    if (index === -1) return new JsonQuery(null, this);
     const deleted = items.splice(index, 1)[0];
     this.writeData(items);
-    return deleted;
+    return new JsonQuery(deleted, this);
   }
 }
 
@@ -164,11 +184,13 @@ class JsonQuery {
       }
 
       if (refModel) {
-        const refRepo = dbClient[`${refModel.toLowerCase()}s`].repository;
-        if (Array.isArray(item[field])) {
-          item[field] = item[field].map(id => refRepo.findByIdSync(id)).filter(Boolean);
-        } else {
-          item[field] = refRepo.findByIdSync(item[field]);
+        const refRepo = dbClient[`${refModel.toLowerCase()}s`];
+        if (refRepo) {
+          if (Array.isArray(item[field])) {
+            item[field] = item[field].map(id => refRepo.findByIdSync(id)).filter(Boolean);
+          } else {
+            item[field] = refRepo.findByIdSync(item[field]);
+          }
         }
       }
     });
@@ -177,10 +199,6 @@ class JsonQuery {
   }
 
   select(fields) {
-    // Simple password stripping mock
-    if (fields === '+password' && !Array.isArray(this.data)) {
-      // Don't strip password (handled during login/comparison)
-    }
     return this;
   }
 
