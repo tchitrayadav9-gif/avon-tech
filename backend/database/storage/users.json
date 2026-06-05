@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "y8gxvg2b6o9y6ooyae",
+    "name": "Executive Admin",
+    "email": "admin@avon.com",
+    "password": "$2a$10$Q0Y6nsx7QCKXx4T4kukFeers5k4B3wdATFN6DlD.5rBw1EAVWFA5q",
+    "role": "admin",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=admin",
+    "createdAt": "2026-06-05T04:27:31.712Z",
+    "updatedAt": "2026-06-05T04:27:31.713Z"
+  },
+  {
+    "_id": "2ycdpcuwe5go277m6h",
+    "name": "Rahul Sharma",
+    "email": "rahul@avon.com",
+    "password": "$2a$10$lz1zvs.6z43CSvyFf6KTBOxbXF0pweZIHHSyR.haV1v71bslCNsYC",
+    "role": "employee",
+    "avatar": "https://api.dicebear.com/7.x/adventurer/svg?seed=rahul",
+    "createdAt": "2026-06-05T04:27:31.803Z",
+    "updatedAt": "2026-06-05T04:27:31.803Z"
+  },
+  {
+    "_id": "s960f1vvgycs399tc5",
+    "name": "Priya Patel",
+    "email": "priya@avon.com",
+    "password": "$2a$10$FyF2QLsBTYdwmmS25ae.Xurk48yjjUeYgfSCeClXOJMtiIFhZr436",
+    "role": "employee",
+    "avatar": "https://api.dicebear.com/7.x/adventurer/svg?seed=priya",
+    "createdAt": "2026-06-05T04:27:31.903Z",
+    "updatedAt": "2026-06-05T04:27:31.903Z"
+  },
+  {
+    "_id": "ehrky9vto31g3vyhh1",
+    "name": "Anil Kumar",
+    "email": "anil@avon.com",
+    "password": "$2a$10$hmDTSYjLB4gk/tDLEXGD5.Y9xU.S8jSYR2QM9.gWpBch0VN8XBpSW",
+    "role": "employee",
+    "avatar": "https://api.dicebear.com/7.x/adventurer/svg?seed=anil",
+    "createdAt": "2026-06-05T04:27:31.996Z",
+    "updatedAt": "2026-06-05T04:27:31.996Z"
+  },
+  {
+    "_id": "zks9vdo6rl90mjo855",
+    "name": "Karan Singh",
+    "email": "client1@avon.com",
+    "password": "$2a$10$nkA6Zs3JnskI08bzsh6g4O4g2lrKwKBOo4Nt4oar10vuIKfAwxbQy",
+    "role": "client",
+    "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=techcorp",
+    "createdAt": "2026-06-05T04:27:32.088Z",
+    "updatedAt": "2026-06-05T04:27:32.088Z"
+  },
+  {
+    "_id": "3qtqrn1ndfnishretf",
+    "name": "Suresh Rao",
+    "email": "client2@avon.com",
+    "password": "$2a$10$K39d800toW.MYYMzA.xpkum/6S6i9PXwvwad/2Hh/kAvtj1tFaK9G",
+    "role": "client",
+    "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=hydlogistics",
+    "createdAt": "2026-06-05T04:27:32.180Z",
+    "updatedAt": "2026-06-05T04:27:32.180Z"
+  }
+]

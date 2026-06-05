@@ -1,0 +1,46 @@
+[
+  {
+    "_id": "wdb95s09t06xbdupaz",
+    "user": "zks9vdo6rl90mjo855",
+    "companyName": "TechCorp India",
+    "contactPerson": "Karan Singh",
+    "phone": "+91 99887 76655",
+    "industry": "Financial Services",
+    "assignedService": "CRM Services",
+    "projectStatus": "Development",
+    "communicationNotes": [
+      {
+        "note": "Onboarded Client Karan Singh representing TechCorp India.",
+        "addedBy": "System"
+      },
+      {
+        "note": "Completed CRM discovery sprint; scope of customization finalized.",
+        "addedBy": "Executive Admin"
+      }
+    ],
+    "createdAt": "2026-06-05T04:27:32.184Z",
+    "updatedAt": "2026-06-05T04:27:32.184Z"
+  },
+  {
+    "_id": "64cf8ta0zhpvy31f2u",
+    "user": "3qtqrn1ndfnishretf",
+    "companyName": "Hyderabad Logistics Pvt. Ltd.",
+    "contactPerson": "Suresh Rao",
+    "phone": "+91 88776 65544",
+    "industry": "Supply Chain & Transport",
+    "assignedService": "ERP/BaaN Solutions",
+    "projectStatus": "Discovery",
+    "communicationNotes": [
+      {
+        "note": "Onboarded Client Suresh Rao representing Hyderabad Logistics.",
+        "addedBy": "System"
+      },
+      {
+        "note": "Discussing migration of legacy BaaN IV tables to Infor LN.",
+        "addedBy": "Executive Admin"
+      }
+    ],
+    "createdAt": "2026-06-05T04:27:32.184Z",
+    "updatedAt": "2026-06-05T04:27:32.184Z"
+  }
+]

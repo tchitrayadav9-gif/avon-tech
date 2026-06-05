@@ -1,0 +1,69 @@
+[
+  {
+    "_id": "1p3g00nmr5x82bzh5n",
+    "user": "2ycdpcuwe5go277m6h",
+    "employeeId": "AVN-2026-001",
+    "phone": "+91 98765 43210",
+    "department": "Frontend",
+    "role": "Senior React Developer",
+    "joiningDate": "2025-01-15T00:00:00.000Z",
+    "skills": [
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "Redux",
+      "Framer Motion"
+    ],
+    "performanceRating": 4.8,
+    "attendanceRate": 98,
+    "taskCompletionRate": 95,
+    "status": "Active",
+    "createdAt": "2026-06-05T04:27:32.181Z",
+    "updatedAt": "2026-06-05T04:27:32.181Z"
+  },
+  {
+    "_id": "68x6drkueyrhrby0te",
+    "user": "s960f1vvgycs399tc5",
+    "employeeId": "AVN-2026-002",
+    "phone": "+91 87654 32109",
+    "department": "Backend",
+    "role": "Lead Node.js Engineer",
+    "joiningDate": "2024-06-10T00:00:00.000Z",
+    "skills": [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "PostgreSQL",
+      "Docker",
+      "JWT"
+    ],
+    "performanceRating": 4.6,
+    "attendanceRate": 96,
+    "taskCompletionRate": 92,
+    "status": "Active",
+    "createdAt": "2026-06-05T04:27:32.182Z",
+    "updatedAt": "2026-06-05T04:27:32.182Z"
+  },
+  {
+    "_id": "qij4cgwiqnu4g4bwey",
+    "user": "ehrky9vto31g3vyhh1",
+    "employeeId": "AVN-2026-003",
+    "phone": "+91 76543 21098",
+    "department": "ERP/BaaN",
+    "role": "ERP Solutions Consultant",
+    "joiningDate": "2024-11-01T00:00:00.000Z",
+    "skills": [
+      "BaaN IV",
+      "Infor LN",
+      "ERP Integration",
+      "SQL Server",
+      "Crystal Reports"
+    ],
+    "performanceRating": 4.2,
+    "attendanceRate": 94,
+    "taskCompletionRate": 88,
+    "status": "Active",
+    "createdAt": "2026-06-05T04:27:32.183Z",
+    "updatedAt": "2026-06-05T04:27:32.183Z"
+  }
+]

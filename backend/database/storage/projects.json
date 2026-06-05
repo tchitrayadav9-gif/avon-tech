@@ -1,0 +1,115 @@
+[
+  {
+    "_id": "yf3kyaz5nkjuwhoz45",
+    "name": "TechCorp CRM Customization",
+    "description": "Implementing custom CRM pipelines, sales analytics dashboards, and customer journey trackers for TechCorp.",
+    "projectType": "CRM Projects",
+    "status": "Development",
+    "progress": 65,
+    "startDate": "2026-04-01T00:00:00.000Z",
+    "endDate": "2026-08-30T00:00:00.000Z",
+    "client": "zks9vdo6rl90mjo855",
+    "team": [
+      "2ycdpcuwe5go277m6h",
+      "s960f1vvgycs399tc5"
+    ],
+    "milestones": [
+      {
+        "title": "UI Mockups Approval",
+        "status": "Completed",
+        "deadline": "2026-04-20T00:00:00.000Z"
+      },
+      {
+        "title": "Database & Pipeline Setup",
+        "status": "Completed",
+        "deadline": "2026-05-15T00:00:00.000Z"
+      },
+      {
+        "title": "Sales Dashboard Integration",
+        "status": "Pending",
+        "deadline": "2026-06-30T00:00:00.000Z"
+      },
+      {
+        "title": "UAT & Delivery",
+        "status": "Pending",
+        "deadline": "2026-08-15T00:00:00.000Z"
+      }
+    ],
+    "createdAt": "2026-06-05T04:27:32.185Z",
+    "updatedAt": "2026-06-05T04:27:32.185Z"
+  },
+  {
+    "_id": "idnqy0vucy6bpz9mr2",
+    "name": "Logistics ERP Migration",
+    "description": "Upgrading Hyderabad Logistics database tables from BaaN IV to Infor CloudSuite and building standard reporting layouts.",
+    "projectType": "ERP Projects",
+    "status": "Development",
+    "progress": 40,
+    "startDate": "2026-05-01T00:00:00.000Z",
+    "endDate": "2026-10-30T00:00:00.000Z",
+    "client": "3qtqrn1ndfnishretf",
+    "team": [
+      "s960f1vvgycs399tc5",
+      "ehrky9vto31g3vyhh1"
+    ],
+    "milestones": [
+      {
+        "title": "Schema Analysis",
+        "status": "Completed",
+        "deadline": "2026-05-20T00:00:00.000Z"
+      },
+      {
+        "title": "Migration Mapping Script",
+        "status": "Pending",
+        "deadline": "2026-07-10T00:00:00.000Z"
+      },
+      {
+        "title": "Reporting BI Tools setup",
+        "status": "Pending",
+        "deadline": "2026-09-01T00:00:00.000Z"
+      }
+    ],
+    "createdAt": "2026-06-05T04:27:32.186Z",
+    "updatedAt": "2026-06-05T04:27:32.186Z"
+  },
+  {
+    "_id": "aly85js6sgkqnmsk9c",
+    "name": "Avon Internal Employee Portal",
+    "description": "Designing the official internal employee and client portal system to govern task tracking and IT business operations.",
+    "projectType": "Enterprise Portals",
+    "status": "Development",
+    "progress": 90,
+    "startDate": "2026-05-10T00:00:00.000Z",
+    "endDate": "2026-06-25T00:00:00.000Z",
+    "client": "y8gxvg2b6o9y6ooyae",
+    "team": [
+      "2ycdpcuwe5go277m6h",
+      "s960f1vvgycs399tc5",
+      "ehrky9vto31g3vyhh1"
+    ],
+    "milestones": [
+      {
+        "title": "API Specification Routing",
+        "status": "Completed",
+        "deadline": "2026-05-20T00:00:00.000Z"
+      },
+      {
+        "title": "Dashboard Panels Design",
+        "status": "Completed",
+        "deadline": "2026-06-01T00:00:00.000Z"
+      },
+      {
+        "title": "AI Assistant Integration",
+        "status": "Completed",
+        "deadline": "2026-06-10T00:00:00.000Z"
+      },
+      {
+        "title": "Staging Testing & Launch",
+        "status": "Pending",
+        "deadline": "2026-06-20T00:00:00.000Z"
+      }
+    ],
+    "createdAt": "2026-06-05T04:27:32.187Z",
+    "updatedAt": "2026-06-05T04:27:32.187Z"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "_id": "4a8vjdqt9unxhyn4ip",
+    "ticketId": "TKT-1490",
+    "title": "Database Connection Timeout",
+    "description": "The staging database drops connection every time we execute the report query. Getting service timeouts.",
+    "raisedBy": "zks9vdo6rl90mjo855",
+    "assignedTo": "s960f1vvgycs399tc5",
+    "priority": "Critical",
+    "status": "Open",
+    "comments": [
+      {
+        "sender": "zks9vdo6rl90mjo855",
+        "text": "This is blocking our QA team. Please check the logs."
+      },
+      {
+        "sender": "s960f1vvgycs399tc5",
+        "text": "Looking into this. It seems to be a connection pool size limitation. I will increase the pool size in db.js."
+      }
+    ],
+    "createdAt": "2026-06-05T04:27:32.192Z",
+    "updatedAt": "2026-06-05T04:27:32.192Z"
+  },
+  {
+    "_id": "qj1fi42b77stxyoxbb",
+    "ticketId": "TKT-2580",
+    "title": "BaaN IV Table Export Error",
+    "description": "Encountering error code 124 when trying to export table tfgld018 to csv for ERP migration verification.",
+    "raisedBy": "3qtqrn1ndfnishretf",
+    "assignedTo": "ehrky9vto31g3vyhh1",
+    "priority": "High",
+    "status": "Pending",
+    "comments": [
+      {
+        "sender": "3qtqrn1ndfnishretf",
+        "text": "This happens only for tables exceeding 100k rows."
+      }
+    ],
+    "createdAt": "2026-06-05T04:27:32.193Z",
+    "updatedAt": "2026-06-05T04:27:32.193Z"
+  }
+]

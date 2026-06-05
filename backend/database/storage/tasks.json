@@ -1,0 +1,77 @@
+[
+  {
+    "_id": "365fot2tkrcob1y510",
+    "title": "Design CRM Analytics Page",
+    "description": "Integrate Recharts and build layouts for displaying sales conversion and client growth pipelines.",
+    "project": "yf3kyaz5nkjuwhoz45",
+    "assignedTo": "2ycdpcuwe5go277m6h",
+    "priority": "High",
+    "status": "In Progress",
+    "dueDate": "2026-06-20T00:00:00.000Z",
+    "dailyUpdates": [
+      {
+        "update": "Setup grid and initialized basic Recharts area chart.",
+        "date": "2026-06-03T09:00:00.000Z"
+      },
+      {
+        "update": "Connected mock analytics api response to the UI.",
+        "date": "2026-06-04T10:00:00.000Z"
+      }
+    ],
+    "createdAt": "2026-06-05T04:27:32.188Z",
+    "updatedAt": "2026-06-05T04:27:32.188Z"
+  },
+  {
+    "_id": "d2wa12x3ibvkdy0x7l",
+    "title": "Build CRM Pipeline APIs",
+    "description": "Write controllers and router mappings to fetch, update, and sort CRM deals based on deal values.",
+    "project": "yf3kyaz5nkjuwhoz45",
+    "assignedTo": "s960f1vvgycs399tc5",
+    "priority": "Medium",
+    "status": "In Progress",
+    "dueDate": "2026-06-18T00:00:00.000Z",
+    "dailyUpdates": [
+      {
+        "update": "Created mongoose task and routes definitions.",
+        "date": "2026-06-04T11:00:00.000Z"
+      }
+    ],
+    "createdAt": "2026-06-05T04:27:32.188Z",
+    "updatedAt": "2026-06-05T04:27:32.188Z"
+  },
+  {
+    "_id": "46cgdq1aibxax5ba5u",
+    "title": "Database Table Mapping",
+    "description": "Document current database tables and columns in BaaN and write scripts to map them to Mongo equivalents.",
+    "project": "idnqy0vucy6bpz9mr2",
+    "assignedTo": "ehrky9vto31g3vyhh1",
+    "priority": "High",
+    "status": "Pending",
+    "dueDate": "2026-07-05T00:00:00.000Z",
+    "dailyUpdates": [],
+    "createdAt": "2026-06-05T04:27:32.190Z",
+    "updatedAt": "2026-06-05T04:27:32.190Z"
+  },
+  {
+    "_id": "332d0pzl1bb5x6dxzm",
+    "title": "Integrate AI FAQ Assistant UI",
+    "description": "Build a premium sliding/collapsible chatbot dashboard interface in the portal with suggested questions.",
+    "project": "aly85js6sgkqnmsk9c",
+    "assignedTo": "2ycdpcuwe5go277m6h",
+    "priority": "Low",
+    "status": "Completed",
+    "dueDate": "2026-06-08T00:00:00.000Z",
+    "dailyUpdates": [
+      {
+        "update": "Created floating chat component and state structures.",
+        "date": "2026-06-02T10:00:00.000Z"
+      },
+      {
+        "update": "Polished layouts, chat animations, and implemented dark mode sync.",
+        "date": "2026-06-04T17:00:00.000Z"
+      }
+    ],
+    "createdAt": "2026-06-05T04:27:32.191Z",
+    "updatedAt": "2026-06-05T04:27:32.191Z"
+  }
+]
